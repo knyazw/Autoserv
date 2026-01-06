@@ -1,0 +1,41 @@
+body{margin:0;font-family:Arial;background:#000;color:#fff}
+.header{padding:20px;text-align:center;background:#010101}
+.logo{font-size:32px;color:#cc5881}
+.nav a{color:white;margin:0 10px;text-decoration:none}
+.nav a:hover{color:#e07a9c;transition:0.3s}
+.nav a.active{color:#cc5881;font-weight:bold}
+.container{padding:30px;max-width:1100px;margin:auto;text-align:center}
+.hero-img{width:100%;max-width:700px;border-radius:10px;margin:20px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.card{background:#77162c;padding:15px;border-radius:10px}
+.card img{width:100%;border-radius:8px}
+.footer{text-align:center;padding:20px;background:#010101;color:#cc5881}
+
+/* Новые стили для добавленных блоков */
+.about-section{margin:40px 0;padding:30px;background:#111;border-radius:10px}
+.about-content{text-align:left;line-height:1.6;max-width:900px;margin:0 auto}
+.about-content p{margin-bottom:20px}
+
+.reviews-section{margin:40px 0}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-top:30px}
+.review-card{background:#1a1a1a;padding:25px;border-radius:10px;text-align:left;border-left:4px solid #cc5881}
+.review-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}
+.review-header h3{margin:0;color:#cc5881}
+.review-date{color:#888;font-size:0.9em}
+.review-rating{color:#ffd700;font-size:1.2em;margin-top:15px}
+
+.works-section{margin:40px 0}
+.works-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin-top:30px}
+.work-card{background:#222;border-radius:10px;overflow:hidden}
+.work-card img{width:100%;height:200px;object-fit:cover}
+.work-info{padding:20px}
+.work-info h3{margin:0 0 10px 0;color:#cc5881}
+.work-info p{color:#aaa;margin:0}
+
+@media(max-width:600px){
+  .logo{font-size:24px}
+  .nav a{display:block;margin:10px 0}
+  .reviews-grid,.works-grid{grid-template-columns:1fr}
+  .about-section{padding:20px}
+  .review-card{padding:20px}
+}
